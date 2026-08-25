@@ -11,16 +11,16 @@ namespace FestivalCidade
             Console.Write("===Sistema de Ingresso Express Festival Cidade===");
 
             Console.Write("Nome do Fã: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? "";
 
             Console.Write("Quantidade de Dias de Show: ");
-            int quantidade = int.Parse(Console.ReadLine());
-
+            int quantidade = int.Parse(Console.ReadLine() ?? "0");
+           
             Console.Write("Cupom: ");
-            string cupom = Console.ReadLine();
+            string cupom = Console.ReadLine() ?? "";
 
             Console.Write("Pontuação Fidelidade: ");
-            int pontos = int.Parse(Console.ReadLine());
+            int pontos = int.Parse(Console.ReadLine() ?? "0");
 
             double taxaservico = 15.0;
             double precoIngresso = 120.0;
@@ -28,7 +28,7 @@ namespace FestivalCidade
             double custoBruto = taxaservico + (precoIngresso * quantidade);
 
             double desconto = 0.0;
-            if (cupom.ToUpper() = "ROCK10")
+            if (cupom.ToUpper() == "ROCK10")
             {
                 desconto = custoBruto * 0.10;
             }
