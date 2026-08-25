@@ -30,6 +30,8 @@ namespace FestivalCidade
             {
                 desconto = custoBruto * 0.10;
             }
+
+            double valorFinal = custoBruto - desconto;
         }
     }
 }
