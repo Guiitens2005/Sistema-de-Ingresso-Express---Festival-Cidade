@@ -32,6 +32,8 @@ namespace FestivalCidade
             }
 
             double valorFinal = custoBruto - desconto;
+
+            bool elegivelVIP = (quantidade > 1) && (pontos >= 500);
         }
     }
 }
