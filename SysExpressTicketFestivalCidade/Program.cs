@@ -34,6 +34,15 @@ namespace FestivalCidade
             double valorFinal = custoBruto - desconto;
 
             bool elegivelVIP = (quantidade > 1) && (pontos >= 500);
+
+            Console.WriteLine("\n--- Resumo do Pedido ---");
+            Console.WriteLine($"Fã: {nome.ToUpper()}");
+            Console.WriteLine($"Valor Bruto: {custoBruto.ToString("C")}");
+            Console.WriteLine($"Desconto: {desconto.ToString("C")}");
+            Console.WriteLine($"Valor Final: {valorFinal.ToString("C")}");
+            Console.WriteLine($"Acesso ao Lounge VIP: {acessoLoungeVip}");
+
+            Console.ReadKey();
         }
     }
 }
