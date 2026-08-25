@@ -25,7 +25,11 @@ namespace FestivalCidade
             double taxaservico = 15.0;
             double precoIngresso = 120.0;
 
-            
+            double custoBruto = taxaservico + (precoIngresso * quantidade);
+            if (cupom.ToUpper() = "ROCK10")
+            {
+                desconto = custoBruto * 0.10;
+            }
         }
     }
 }
