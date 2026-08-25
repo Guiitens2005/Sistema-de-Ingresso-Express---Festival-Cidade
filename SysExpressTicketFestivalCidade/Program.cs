@@ -26,6 +26,8 @@ namespace FestivalCidade
             double precoIngresso = 120.0;
 
             double custoBruto = taxaservico + (precoIngresso * quantidade);
+
+            double desconto = 0.0;
             if (cupom.ToUpper() = "ROCK10")
             {
                 desconto = custoBruto * 0.10;
@@ -36,11 +38,11 @@ namespace FestivalCidade
             bool elegivelVIP = (quantidade > 1) && (pontos >= 500);
 
             Console.WriteLine("\n--- Resumo do Pedido ---");
-            Console.WriteLine($"Fã: {nome.ToUpper()}");
+            Console.WriteLine($"Fã: {name.ToUpper()}");
             Console.WriteLine($"Valor Bruto: {custoBruto.ToString("C")}");
             Console.WriteLine($"Desconto: {desconto.ToString("C")}");
             Console.WriteLine($"Valor Final: {valorFinal.ToString("C")}");
-            Console.WriteLine($"Acesso ao Lounge VIP: {acessoLoungeVip}");
+            Console.WriteLine($"Acesso ao Lounge VIP: {elegivelVIP}");
 
             Console.ReadKey();
         }
