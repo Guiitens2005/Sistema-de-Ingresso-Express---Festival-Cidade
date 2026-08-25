@@ -21,6 +21,11 @@ namespace FestivalCidade
 
             Console.Write("Pontuação Fidelidade: ");
             int pontos = int.Parse(Console.ReadLine());
+
+            double taxaservico = 15.0;
+            double precoIngresso = 120.0;
+
+            
         }
     }
 }
